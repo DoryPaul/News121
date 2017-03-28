@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.yyz.news121.view.NoScrollViewPager
+        android:layout_weight="1"
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></com.example.yyz.news121.view.NoScrollViewPager>
+
+    <RadioGroup
+        android:id="@+id/rg_home"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:background="@drawable/title_bottom_bg"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:text="首页"
+            android:drawableTop="@drawable/rb_home_select"
+            style="@style/bottom_tag_style"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_player"
+            android:text="数据"
+            android:drawableTop="@drawable/rb_player_select"
+            style="@style/bottom_tag_style"
+            />
+        <RadioButton
+            android:id="@+id/rb_match"
+            android:text="比赛"
+            android:drawableTop="@drawable/rb_match_select"
+            style="@style/bottom_tag_style"
+            />
+        <RadioButton
+            android:id="@+id/rb_setting"
+            android:text="设置"
+            android:drawableTop="@drawable/rb_setting_select"
+            style="@style/bottom_tag_style"
+            />
+
+    </RadioGroup>
+
+
+
+</LinearLayout>

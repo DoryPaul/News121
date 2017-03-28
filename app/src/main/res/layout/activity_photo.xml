@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.yyz.news121.activity.PhotoActivity">
+    <com.example.yyz.news121.view.RoundImageView
+        android:layout_gravity="center"
+        android:id="@+id/usericon1"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/settingbg"
+        />
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_width="160dp"
+        android:text="图库"
+        android:id="@+id/tuku"
+        android:layout_height="60dp" />
+    <Button
+        android:layout_gravity="center"
+        android:text="摄像机"
+        android:id="@+id/shexiangji"
+        android:layout_width="160dp"
+        android:layout_height="60dp" />
+</LinearLayout>

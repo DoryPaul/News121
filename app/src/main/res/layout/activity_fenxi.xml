@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/analysebg"
+    tools:context="com.example.yyz.news121.activity.FenxiActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical">
+        <TextView
+            android:paddingTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="球员能力分析图"
+            android:textSize="20sp"
+            android:id="@+id/textView" />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/name"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#e71212"
+        android:text="球员：" />
+    <ImageView
+        android:layout_weight="1"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:paddingLeft="2dp"
+        android:id="@+id/analyseicon"
+        android:src="@mipmap/ic_launcher"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.example.yyz.news121.view.SpiderWebChart
+        android:id="@+id/spiderwebchart"
+        android:layout_width="match_parent"
+        android:layout_height="400dip"
+        android:layout_below="@+id/name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    </LinearLayout>
+</LinearLayout>

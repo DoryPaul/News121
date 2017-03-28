@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="用户名"
+            android:gravity="center"
+            android:id="@+id/item_username"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_blue_dark"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:paddingLeft="8dp"
+
+            android:gravity="center"
+            android:id="@+id/item_neirong"
+            android:textColor="@android:color/black"
+            android:text="评论内容"/>
+    </LinearLayout>
+
+</LinearLayout>

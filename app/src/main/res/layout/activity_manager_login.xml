@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/loginbg"
+    tools:context="com.example.yyz.news121.activity.ManagerLoginActivity">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/manager_name"
+            android:hint="请输入经理用户名"
+            android:background="@null"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:layout_above="@+id/managerlogin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="80dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/manager_pwd"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:background="@null"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:layout_alignTop="@+id/manager_name"
+            android:layout_alignLeft="@+id/manager_name"
+            android:layout_alignStart="@+id/manager_name"
+            android:layout_marginTop="55dp" />
+    <com.dd.processbutton.iml.ActionProcessButton
+        android:id="@+id/managerlogin"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="登陆"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        custom:pb_colorComplete="@color/green_complete"
+        custom:pb_colorNormal="@color/blue_normal"
+        custom:pb_colorPressed="@color/blue_pressed"
+        custom:pb_colorProgress="@color/purple_progress"
+        custom:pb_textComplete="登陆成功"
+        custom:pb_textProgress="Loading"
+
+        android:layout_marginBottom="170dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

@@ -1,0 +1,214 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/settingbg"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="280dp">
+
+        <com.example.yyz.news121.view.RoundImageView
+            android:id="@+id/usericon"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/settingbg"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/yonghuming"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usericon"
+            android:layout_centerHorizontal="true"
+            android:text="yonghuming" />
+
+    </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/set"
+    android:visibility="visible"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/yonghu"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:text="用户登录" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/jingliren"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:text="球队经理登录" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/personal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:text="个人中心" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/quit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:text="退出" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+    <LinearLayout
+        android:id="@+id/chat"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:text="聊天" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/picture"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:text="图库" />
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-25dp"
+        android:visibility="gone"
+       android:id="@+id/linelogin"
+        android:orientation="vertical"
+       >
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:background="@null"
+                android:id="@+id/linename"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="match_parent"
+                android:hint="用户名"/>
+    </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+            <EditText
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:background="@null"
+                android:id="@+id/linepsd"
+                android:inputType="textPassword"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="match_parent"
+                android:hint="密码"/>
+    </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:background="@drawable/loginselect"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/linebtn"
+                android:layout_width="300dp"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:background="@null"
+                    android:id="@+id/registertv"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="match_parent"
+                    android:hint="立即注册"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:background="@null"
+                    android:id="@+id/backtv"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="match_parent"
+                    android:hint="返回"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

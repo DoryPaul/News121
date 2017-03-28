@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.yyz.news121.view.NoScrollViewPager
+        android:layout_weight="1"
+        android:id="@+id/manager_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></com.example.yyz.news121.view.NoScrollViewPager>
+
+    <RadioGroup
+        android:id="@+id/managerrg_home"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:background="@drawable/title_bottom_bg"
+        android:layout_width="match_parent"
+        android:layout_height="110dp">
+
+        <RadioButton
+            android:id="@+id/managerrb_home"
+            android:text="主页"
+            android:drawableTop="@drawable/rb_home_select"
+            style="@style/bottom_tag_style"
+           />
+
+        <RadioButton
+            android:id="@+id/managerrb_player"
+            android:text="新闻"
+            android:drawableTop="@drawable/rb_player_select"
+            style="@style/bottom_tag_style"
+            />
+
+
+    </RadioGroup>
+
+
+
+</LinearLayout>

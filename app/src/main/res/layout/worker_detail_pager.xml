@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ android:background="@drawable/yyznba">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout9">
+
+
+        <com.example.yyz.news121.view.RefreshListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/workerlistView" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/stuffname"
+        android:hint="职工姓名"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/stuffzhiwei"
+        android:hint="职位"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/stuffsalary"
+        android:hint="工资"
+        android:gravity="center"
+        android:layout_below="@+id/stuffname"
+        android:layout_alignRight="@+id/stuffname"
+        android:layout_alignEnd="@+id/stuffname"
+        android:layout_marginTop="63dp" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/stuffheyue"
+        android:hint="合约"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/stuffsalary"
+        android:layout_alignLeft="@+id/stuffzhiwei"
+        android:layout_alignStart="@+id/stuffzhiwei" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加"
+        android:id="@+id/add"
+        android:layout_below="@+id/stuffsalary"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除"
+        android:id="@+id/delete"
+        android:layout_alignTop="@+id/add"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="更新"
+        android:id="@+id/update"
+        android:layout_alignTop="@+id/delete"
+        android:layout_alignRight="@+id/linearLayout9"
+        android:layout_alignEnd="@+id/linearLayout9" />
+
+</RelativeLayout>

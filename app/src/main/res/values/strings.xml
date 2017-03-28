@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">News121</string>
+
+    <string-array name="university">
+        <item>UCLA</item>
+        <item>Duke</item>
+        <item>UNC</item>
+    </string-array>
+
+    <string-array name="weizhi">
+        <item>控球后卫</item>
+        <item>得分后卫</item>
+        <item>小前锋</item>
+        <item>大前锋</item>
+        <item>中锋</item>
+    </string-array>
+
+    <string name="spiderwebchart_title1">得分</string>
+    <string name="spiderwebchart_title2">助攻</string>
+    <string name="spiderwebchart_title3">篮板</string>
+    <string name="spiderwebchart_title4">盖帽</string>
+    <string name="spiderwebchart_title5">抢断</string>
+</resources>

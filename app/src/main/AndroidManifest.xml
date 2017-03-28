@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yyz.news121">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".NBAApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GuideActivity" />
+        <activity
+            android:name=".activity.HomeActivity"
+            android:theme="@style/Theme.PageIndicatorDefaults" />
+        <activity android:name=".activity.PlayerDetailActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.ManagerLoginActivity" />
+        <activity android:name=".activity.ManagerMainActivity" />
+        <activity android:name=".activity.PersonalAvtivity" />
+        <activity android:name=".activity.FenxiActivity" />
+        <activity android:name=".activity.PinglunActivity" />
+        <activity android:name=".activity.ZhiboActivity" />
+        <activity android:name=".activity.PhotoActivity" />
+        <activity android:name=".chat.ChatActivity" />
+        <activity android:name=".chat.ConversationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.example.yyz.news121"
+                    android:pathPrefix="/conversation"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".chat.AddFriendActivity" />
+        <activity android:name=".activity.TukuActivity" />
+        <activity android:name=".activity.TukuDetailActivity"></activity>
+    </application>
+
+</manifest>
